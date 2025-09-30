@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMPERATRIX: PRODUCTS</title>
+        <head>
+        <link rel="icon" href="./assets/cerydra_icon.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="query.css">
+
+    </head>
+
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav id="desktop-nav">
+
+            <div class="icon" onclick="window.location.href='main.html#home';"></div>
+            <div class="icon2" onclick="window.location.href='main.html#home';"></div>
+
+            <div>
+
+                <ul class="nav-links">
+                    <li><a href="main.html#home">Home</a></li>
+                    <li><a href="main.html#products">Services</a></li>
+                    <li><a href="main.html#about">About</a></li>
+                    <li><a href="main.html#contact">Contact</a></li>
+                    <li><a href="checkout.html#checkout">🛒 <span class="cart-badge"></span> </a></li>
+                    
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <nav id="hamburger-nav">
+
+            <div class="logo"></div>
+
+            <div class="hamburger-menu">
+
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="main.html#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="main.html#products" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="main.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="main.html#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="checkout.html#checkout" onclick="toggleMenu(); loadCartItems()">Checkout</a></li>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Services Section -->
+        <section id="products" class=" bg-gradient">
+
+            <div class="content">
+                <h2 class="content-title">Our Services</h2>
+                <p class="section-subtitle">Discover our most reliable revenants, each with different styles and charms, ready to protect anytime and anywhere.</p>
+                <p class="section-subtitle">Click on a revenant to see more details.</p>
+            </div>
+
+            <div class="product-container" id="product-list">
+
+                <div class="product-wrapper">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Tribbie_Portrait.png" alt="Tribbie" style="top: 0%; left: 20%; width: 350%; height: 350%;">
+                            <button class="btn-img" onclick="showProductDetails('productTribbie')" aria-label="Show Tribbie"></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Tribbie</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Phainon_Portrait.png" alt="Phainon" style="top: 99%; left: 250%; width: 750%; height: 750%;">
+                            <button class="btn-img" onclick="showProductDetails('productPhainon')" aria-label="Show Phainon"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Phainon</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-wrapper" style="gap: 32rem;">
+    
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Hyacine_Portrait.png" alt="Hyacine" style="top: 100%; left: -30%; width: 630%; height: 630%;">
+                            <button class="btn-img" onclick="showProductDetails('productHyacine')" aria-label="Show Hyacine"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Hyacine</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Anaxa_Portrait.png" alt="Anaxa" style="top: 320%; left: 130%; width: 600%; height: 600%;">
+                            <button class="btn-img" onclick="showProductDetails('productAnaxa')" aria-label="Show Anaxa"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Anaxa</h3>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="product-wrapper">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Mydei_Portrait.png" alt="Mydei" style="top: 15%; left: 57%; width: 850%; height: 850%;">
+                            <button class="btn-img" onclick="showProductDetails('productMydei')" aria-label="Show Mydei"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Mydei</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Cipher_Portrait.png" alt="Cipher" style="top: -50%; left: 80%; width: 440%; height: 440%;">
+                            <button class="btn-img" onclick="showProductDetails('productCipher')" aria-label="Show Cipher"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Cipher</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-wrapper" style="gap: 32rem;">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Aglaea_Portrait.png" alt="Aglaea" style="top: 380%; left: 200%; width: 1000%; height: 1000%;">
+                            <button class="btn-img" onclick="showProductDetails('productAglaea')" aria-label="Show Aglaea"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Aglaea</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Castorice_Portrait.png" alt="Castorice" style="top: 260%; left: 45%; width: 650%; height: 650%;">
+                            <button class="btn-img" onclick="showProductDetails('productCastorice')" aria-label="Show Catorice"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Castorice</h3>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="product-wrapper">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Cerydra_Portrait.png" alt="Cerydra Crown" style="top: 150%; left: 175%; width: 620%; height: 620%;">
+                            <button class="btn-img" onclick="showProductDetails('productCerydra')" aria-label="Show Cerydra"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Cerydra</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Hysilens_Portrait.png" alt="Hysilens Tiara" style="top: 47%; left: 275%; width: 520%; height: 520%;">
+                            <button class="btn-img" onclick="showProductDetails('productHysilens')" aria-label="Show Hysilens"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Hysilens</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-wrapper">
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Cyrene_Splash_Art.png" alt="???" style="top: 90%; left: 75%; width: 700%; height: 700%; filter: brightness(0);">
+                            <button class="btn-img" onclick="showProductDetails('productCyrene')" aria-label="Show ???"></button>></button>
+                        </div>
+                        <div class="product-item-text">
+                            <h3>???</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popup">
+                    <div class="popup-text"><h3>Successfully added to waiting list!</h3></div>
+                </div>
+
+                <div class ="product-item-details-section" id="product-details">
+                    <div class="product-item-details-img" id="product-details-img">
+                        <!-- image -->
+                    </div>
+                    <div class="product-item-details-desc">
+                        <div class="product-item-details-text" id="product-details-text">
+                            <!-- text -->
+                        </div>
+                        <button class="close-button" onclick="showDetails()">Close</button>
+                        <button class="buy-button">Recall</button>
+                    </div>
+                    <div class="product-item-details-aud" id="product-details-aud"></div>
+                </div>
+
+            </div>
+
+
+            
+        </section>
+
+        <!-- Footer -->
+         <footer>
+
+            <div class="nav-footer">
+                <div class="nav-links-footer">
+                    <ul class="nav-links">
+                        <li><a href="main.html#home">Home</a></li>
+                        <li><a href="main.html#products">Services</a></li>
+                        <li><a href="main.html#about">About</a></li>
+                        <li><a href="main.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+        
+            <p>© 2025 IMPERATRIX. All rights reserved.</p>
+
+         </footer>
+
+        <script src="scripts.js" defer></script>
+        <script src="itemManager.js" defer></script>
+
+    </body>
+
+
+</html>

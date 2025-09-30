@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHECKOUT</title>
+        <head>
+        <link rel="icon" href="./assets/cerydra_icon.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="query.css">
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav id="desktop-nav">
+
+            <div class="icon" onclick="window.location.href='main.html#home';"></div>
+            <div class="icon2" onclick="window.location.href='main.html#home';"></div>
+
+            <div>
+
+                <ul class="nav-links">
+                    <li><a href="main.html#home">Home</a></li>
+                    <li><a href="main.html#products">Services</a></li>
+                    <li><a href="main.html#about">About</a></li>
+                    <li><a href="main.html#contact">Contact</a></li>
+                    <li><a href="checkout.html#checkout">🛒 <span class="cart-badge"></span> </a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <nav id="hamburger-nav">
+
+            <div class="logo"></div>
+
+            <div class="hamburger-menu">
+
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="main.html#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="main.html#products" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="main.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="main.html#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="checkout.html#checkout" onclick="toggleMenu(); loadCartItems()">Checkout</a></li>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="bg-gradient">
+
+            <div class="content">
+                <h2 class="content-title">Checkout</h2>
+            </div>
+
+            <div id="checkout-content">
+
+                <div id="checkout-wrapper">
+
+                    <ul id="cart-items">
+
+                        <li>placeholder</li>
+
+                    </ul>
+
+                </div>
+
+                <div id="checkout-wrapper-extra">
+
+                    <button id="checkout-btn" class="btn-color-1" onclick="clearCart(); showPopup();">
+                        <p>Checkout</p>
+                    </button>
+
+                    <div class="popup">
+                        <div class="popup-text"><h3>Successfully checked out!</h3></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+         <footer>
+
+            <div class="nav-footer">
+                <div class="nav-links-footer">
+                    <ul class="nav-links">
+                        <li><a href="main.html#home">Home</a></li>
+                        <li><a href="main.html#products">Services</a></li>
+                        <li><a href="main.html#about">About</a></li>
+                        <li><a href="main.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+        
+            <p>© 2025 IMPERATRIX. All rights reserved.</p>
+
+         </footer>
+
+        <script src="scripts.js" defer></script>
+        <script src="itemManager.js" defer></script>
+
+    </body>
+
+
+</html>
