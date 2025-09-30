@@ -3,9 +3,9 @@ const itemProducts = {
   productTribbie: {
     id: 'productTribbie',
     name: 'Tribbie',
-    img: 'assets/Character_Tribbie_Portrait.png',
+    img: 'Character_Tribbie_Portrait.png',
     desc: '"The whispers of the soul shatter into thousands of pieces and fly away."',
-    song: 'assets/song/Arcahv.mp3',
+    song: 'song/Arcahv.mp3',
     top: '0',
     left: '0',
     transform: 'scale(6) translateX(75%) translateY(30%)',
@@ -17,9 +17,9 @@ const itemProducts = {
   productHyacine: {
     id: 'productHyacine',
     name: 'Hyacine',
-    img: 'assets/Character_Hyacine_Portrait.png',
+    img: 'Character_Hyacine_Portrait.png',
     desc: `"May our journey's end be one without darkness."`,
-    song: 'assets/song/Tempestissimo.mp3',
+    song: 'song/Tempestissimo.mp3',
     top: '0',
     left: '0',
     transform: 'scale(12) translateX(25%) translateY(40%)',
@@ -31,9 +31,9 @@ const itemProducts = {
     productMydei: {
     id: 'productMydei',
     name: 'Mydei',
-    img: 'assets/Character_Mydei_Portrait.png',
+    img: 'Character_Mydei_Portrait.png',
     desc: '"Strife will not cease with victory."',
-    song: 'assets/song/Infinite Strife,.mp3',
+    song: 'song/Infinite Strife,.mp3',
     top: '0',
     left: '0',
     transform: 'scale(12) translateX(48%) translateY(30%)',
@@ -45,9 +45,9 @@ const itemProducts = {
   productCipher: {
     id: 'productCipher',
     name: 'Cipher',
-    img: 'assets/Character_Cipher_Portrait.png',
+    img: 'Character_Cipher_Portrait.png',
     desc: '"Lies and truths are nothing before the weight of sincerity."',
-    song: 'assets/song/1f1e33.mp3',
+    song: 'song/1f1e33.mp3',
     top: '0',
     left: '0',
     transform: 'scale(7) translateX(65%) translateY(45%)',
@@ -59,9 +59,9 @@ const itemProducts = {
   productHysilens: {
     id: 'productHysilens',
     name: 'Hysilens',
-    img: 'assets/Character_Hysilens_Portrait.png',
+    img: 'Character_Hysilens_Portrait.png',
     desc: '"Though the ripples are fleeting, they converge into waves."',
-    song: 'assets/song/Grievous Lady.mp3',
+    song: 'song/Grievous Lady.mp3',
     top: '0',
     left: '0',
     transform: 'scale(9) translateX(53%) translateY(65%)',
@@ -73,9 +73,9 @@ const itemProducts = {
   productCastorice: {
     id: 'productCastorice',
     name: 'Castorice',
-    img: 'assets/Character_Castorice_Portrait.png',
+    img: 'Character_Castorice_Portrait.png',
     desc: '"All things cycle through life and death... The end is also the beginning."',
-    song: 'assets/song/Xanatos.mp3',
+    song: 'song/Xanatos.mp3',
     top: '0',
     left: '0',
     transform: 'scale(9) translateX(45%) translateY(30%)',
@@ -87,9 +87,9 @@ const itemProducts = {
   productAnaxa: {
     id: 'productAnaxa',
     name: 'Anaxa',
-    img: 'assets/Character_Anaxa_Portrait.png',
+    img: 'Character_Anaxa_Portrait.png',
     desc: '"Truth is already in my hands."',
-    song: 'assets/song/Axium Crisis.mp3',
+    song: 'song/Axium Crisis.mp3',
     top: '0',
     left: '0',
     transform: 'scale(8) translateX(50%) translateY(40%)',
@@ -101,9 +101,9 @@ const itemProducts = {
   productCerydra: {
     id: 'productCerydra',
     name: 'Cerydra',
-    img: 'assets/Character_Cerydra_Portrait.png',
+    img: 'Character_Cerydra_Portrait.png',
     desc: '"This is not the end, merely the cornerstone of a grand endeavor."',
-    song: 'assets/song/Testify (feat. 星熊南巫).mp3',
+    song: 'song/Testify (feat. 星熊南巫).mp3',
     top: '0',
     left: '0',
     transform: 'scale(12) translateX(45%) translateY(55%)',
@@ -115,9 +115,9 @@ const itemProducts = {
   productAglaea: {
     id: 'productAglaea',
     name: 'Aglaea',
-    img: 'assets/Character_Aglaea_Portrait.png',
+    img: 'Character_Aglaea_Portrait.png',
     desc: '"Even the most majestic epics are woven from individual words."',
-    song: 'assets/song/Lament Rain.mp3',
+    song: 'song/Lament Rain.mp3',
     top: '0',
     left: '0',
     transform: 'scale(16) translateX(22%) translateY(52%)',
@@ -129,9 +129,9 @@ const itemProducts = {
   productPhainon: {
     id: 'productPhainon',
     name: 'Phainon',
-    img: 'assets/Character_Phainon_Portrait.png',
+    img: 'Character_Phainon_Portrait.png',
     desc: '"We will eventually become the flames that light up the new world."',
-    song: 'assets/song/Aegleseeker.mp3',
+    song: 'song/Aegleseeker.mp3',
     top: '0',
     left: '0',
     transform: 'scale(8) translateX(62%) translateY(30%)',
@@ -143,9 +143,9 @@ const itemProducts = {
   productCyrene: {
     id: 'productCyrene',
     name: '???',
-    img: 'assets/Character_Cyrene_Splash_Art.png',
+    img: 'Character_Cyrene_Splash_Art.png',
     desc: '???',
-    song: 'assets/song/Arghena.mp3',
+    song: 'song/Arghena.mp3',
     top: '0',
     left: '0',
     transform: 'scale(18) translateX(24%) translateY(37%)',
@@ -392,6 +392,7 @@ function showProductDetails(productId) {
 
   showDetails();
 }
+
 
 
 
