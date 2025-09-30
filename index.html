@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMPERATRIX</title>
+        <head>
+        <link rel="icon" href="./assets/cerydra_icon.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="query.css">
+
+    </head>
+
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav id="desktop-nav">
+
+            <div class="icon" onclick="window.location.href='#home';"></div>
+            <div class="icon2" onclick="window.location.href='#home';"></div>
+
+            <div>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="checkout.html#checkout" onclick="loadCartItems()">🛒 <span class="cart-badge"></span> </a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <nav id="hamburger-nav">
+
+            <div class="logo"></div>
+
+            <div class="hamburger-menu">
+
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#products" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="checkout.html#checkout" onclick="toggleMenu(); loadCartItems()">Checkout</a></li>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home">
+
+            <section class="carousel-container">
+                
+                <div class="title-content">
+                    <h1 class="title">IMPERATRIX</h1>
+                    <p class="section-subtitle">"To start is to end."</p>
+                </div>
+                
+                <div class="carousel">
+                    
+                    <!-- last slide dupe -->
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/mydei_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                    <!-- slides -->
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/cerydra_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/hysilens_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/aglaea_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/mydei_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                    <!-- first slide dupe -->
+                    <div class="carousel-item">
+                        <div class="parallax" style="background-image: url(assets/cerydra_menu.png);"></div>
+                        <div class="overlay bg-gradient-carousel"></div>
+                    </div>
+
+                </div>
+                
+                
+            </section>
+
+        </section>
+
+        <!-- Services Section -->
+        <section id="products">
+
+            <div class="content">
+                <h2 class="content-title">Our Services</h2>
+                <p class="section-subtitle">Discover our most reliable revenants, each with different styles and charms, ready to protect anytime and anywhere.</p>
+            </div>
+
+            <div class="product-container" id="product-list">
+
+                <div class="product-wrapper">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Cerydra_Portrait.png" alt="Cerydra" style="top: 150%; left: 175%; width: 620%; height: 620%;">
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Cerydra</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Hysilens_Portrait.png" alt="Hysilens" style="top: 47%; left: 275%; width: 520%; height: 520%;">
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Hysilens</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-wrapper" style="gap: 30rem;">
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Aglaea_Portrait.png" alt="Aglaea" style="top: 350%; left: 185%; width: 900%; height: 900%;">
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Aglaea</h3>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-item-pic">
+                            <img src="assets/Character_Mydei_Portrait.png" alt="Mydei" style="top: 15%; left: 57%; width: 830%; height: 830%;">
+                        </div>
+                        <div class="product-item-text">
+                            <h3>Mydei</h3>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='products.html'">
+                        <p>See More</p>
+                    </button>
+                </div> 
+                
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <div class="content">
+                <h2 class="content-title">About Us</h2>
+            </div>
+
+            <div class="about-container">
+                
+                <div class="about-wrapper">
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                <br>
+                                <br>
+                                "We all share the same, cruel fate. And thus, we'll give our strength and power in the name of the world."
+                                <br>
+                                <br>
+                                <br>
+                                - Cerydra, 2025
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about-wrapper">
+
+                    <div class="about-content">
+                        <div class="about-img">
+                            <img src="assets/Character_Cerydra_Eidolon_4.png" alt="Cerydra portrait">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='about.html'">
+                    <p>Learn More</p>
+                </button>
+            </div> 
+
+        </section>
+
+        <!-- Contact Section -->
+         <section id="contact">
+
+            <div class="content">
+                <h2 class="content-title">Contact Us</h2>
+            </div>
+
+            <div class="contact-info-container">
+                <div class="contact-info-wrapper">
+                    <img src="assets/email-icon.png"
+                        alt="email icon"
+                        class="contact-icon">
+                    <p>info@imperatrix.com</p>
+                </div>
+            </div>
+
+            <div class="contact-info-container">
+                <div class="contact-info-wrapper">
+                    <img src="assets/whatsapp-icon.png"
+                        alt="phone icon"
+                        class="contact-icon">
+                    <p>+01 2345-6789-1011</p>
+                </div>
+            </div>
+
+         </section>
+
+         <!-- Footer -->
+         <footer>
+
+            <div class="nav-footer">
+                <div class="nav-links-footer">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+            <p>© 2025 IMPERATRIX. All rights reserved.</p>
+
+         </footer>
+
+
+        <script src="scripts.js" defer></script>
+        <script src="itemManager.js" defer></script>
+
+    </body>
+
+
+</html>
